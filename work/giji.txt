@@ -1,0 +1,31 @@
+フレームワークの歴史
+
+PHP3大フレームワーク（※過去）
+CakePHP
+ 規約がユルユル、ベンチャー小規模開発に人気
+Synfony
+ 規約がガチガチ、大規模開発に向いている
+ KLab
+Zend Fram Work
+ その中間
+
+Laravel
+ DMM,さいばー
+ 現在、世界で一番シェア率が高い
+FuelPHP
+Codeigniter
+ 進撃のバハムートが有名
+ 有料になって廃った
+Falcon
+ コンパイルされたFW、爆速
+
+Git
+ Gitフロー
+ GitHubフロー
+ GitLubフロー
+
+
+
+
+
+
