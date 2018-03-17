@@ -34,6 +34,11 @@
     @endforeach
     </table>
     {{-- $item->appends(['sort' => $sort])->link() --}}
+    <p>ここが本文のコンテンツです。</p>
+    <p>Controller value<br>'message' = {{$message}}</p>
+    <p>ViewComposer value<br>'view_message' = {{$view_message}}</p>
+    @include('components.message', ['msg_title'=>'OK', 'msg_content'=>'サブビューです。'])
+
 @endsection
 
 @section('footer')
