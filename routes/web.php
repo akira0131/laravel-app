@@ -11,26 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+
+// Top Page
+Route::get('/', 'TopController@index');
+
+// Search Category Page
+Route::get('search/category', 'SearchCategoryController@index');
+
+// Search Item Page
+Route::get('search/item', 'SearchItemController@index');
+
+// Pickup Item Page
+Route::get('pickup/item', 'PickupItemController@index');
+
+// Ranking Item Page
+Route::get('ranking/item', 'RankingItemController@index');
 
 Auth::routes();
 
-//Route::get('home', 'HomeController@index')->name('home');
-Route::get('hello', 'HelloController@index');
-Route::get('person', 'PersonController@index');
-
-Route::get('hello/add', 'HelloController@add');
-Route::post('hello/add', 'HelloController@create');
-
-Route::get('hello/edit', 'HelloController@edit');
-Route::post('hello/edit', 'HelloController@update');
-
-Route::get('hello/del', 'HelloController@del');
-Route::post('hello/del', 'HelloController@remove');
-
-Route::get('hello/show', 'HelloController@show');
-
-Route::get('person/find', 'PersonController@find');
-Route::post('person/find', 'PersonController@search');
+Route::get('/home', 'HomeController@index')->name('home');

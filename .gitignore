@@ -1,12 +1,18 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
+# Laravel.gitignore
+### Composer ###
+composer.phar
 /vendor
-/.idea
-/.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
+
+### PHP Coding Standards Fixer ###
+.php_cs.cache
+
+### Node ###
+/node_modules
+
+## Laravel ##
 .env
+
+## Laravel Homestead ##
+/.vagrant
+Homestead.yaml
+Homestead.json
