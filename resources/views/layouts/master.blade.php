@@ -4,21 +4,29 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>@yield('title') - App Name</title>
+        
         @section('styles')
+            <!-- twitter boostrap -->
             <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+            <!-- original css -->
+            <link rel="stylesheet" href="{{ elixir('css/custom.css') }}">
         @show
+        
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     </head>
-    <body class="@yield('body-class')">
-        <div class="container">
+    <body>
+        <div id='container'>
             @yield('content')
         </div>
+
         @section('scripts')
-        <!--    <script src="{{ elixir('js/main.js') }}"></script> -->
+            <script src="{{ elixir('js/app.js') }}"></script>
         @show
     </body>
 </html>

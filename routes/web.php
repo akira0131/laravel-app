@@ -13,6 +13,10 @@
 
 Auth::routes();
 
+Route::get('admin/member',function(){
+        return view('admin.member.index');
+});
+
 // Top Page
 Route::get('/', 'TopController@index');
 
